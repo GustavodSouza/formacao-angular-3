@@ -5,16 +5,13 @@ import { AutenticacaoInterceptor } from './autenticacao.interceptor';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AutenticacaoInterceptor,
       multi: true,
-      // Multi, define que podem ter mais de um interceptor
     },
   ],
 })
-export class AutenticacaoModule { }
+export class AutenticacaoModule {}

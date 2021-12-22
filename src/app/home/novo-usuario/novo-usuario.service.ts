@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { NovoUsuario } from './novo-usuario';
 
-const API = environment.apiUrl;
+const API = environment.apiURL;
 
 @Injectable({
   providedIn: 'root',
